@@ -1,0 +1,190 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/mountains.png" type="image/icon type">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <title>Activities</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="icon" href="./images/ski.png" type="image/icon type">
+
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="logo">
+            <i class="fas fa-hiking"></i> Activities
+        </h1>
+        <ul class="nav_links">
+            <li><a href="../Home/index.html" class="on"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="../Places/index.html"><i class="fas fa-place-of-worship"></i> Places</a></li>
+            <li><a href="./index.html"><i class="fas fa-hiking"></i> Activities </a></li>
+            <li class="btn"><a href="../log in/index.html">Sign in</a></li>
+        </ul>
+        <img src="./images/Calque 1.png" alt="" class="menu">
+    </nav>
+
+    <header>
+        <div class="contener_header">
+            <h2>
+                explore the colorful Activities in toubkal
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam maxime enim reprehenderit.</p>
+            <a href="../about us/index.html" class="btn">Learn More</a>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>its time to celebrate! the best <span> event organizers </span></h3>
+            <a href="#" class="btn">contact us</a>
+        </div>
+
+        <div class="swiper-container home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/Nouveau dossier/pexels-melvin-wahlin-2405649.jpg" alt=""
+                        height="100%" width="100%"></div>
+                <div class="swiper-slide"><img src="./images/Nouveau dossier/pexels-erik-mclean-4365458.jpg" alt=""
+                        height="100%" width="100%"></div>
+                <div class="swiper-slide"><img src="./images/pexels-anastasia-shuraeva-8926707.jpg" alt="" height="100%"
+                        width="100%"></div>
+                <div class="swiper-slide"><img src="./images/278-ted3086-eye.jpg" alt="" height="100%" width="100%">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="fin">
+        <h1 class="h1">activites de vacances les mieux notées</h1>
+        <section class="contener">
+            <div class="cart">
+                <div class="image">
+                    <img src="./images/278-ted3086-eye.jpg" alt="">
+                </div>
+
+                <div class="infos">
+                    <h3>Bike tour</h3>
+                    <span><i class="fas fa-skiing-nordic"></i></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam natus pariatur.</p>
+                </div>
+                <div class="icons">
+                    <a href="" class="fab fa-facebook-f"></a>
+                    <a href="" class="fab fa-twitter"></a>
+                    <a href="" class="fab fa-instagram"></a>
+                </div>
+            </div>
+
+            <div class="cart">
+                <div class="image">
+                    <img src="./images/pexels-anastasia-shuraeva-8926707.jpg" alt="">
+                </div>
+
+                <div class="infos">
+                    <h3>Bike race</h3>
+                    <span><i class="fas fa-skiing-nordic"></i></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam natus pariatur.</p>
+                </div>
+                <div class="icons">
+                    <a href="" class="fab fa-facebook-f"></a>
+                    <a href="" class="fab fa-twitter"></a>
+                    <a href="" class="fab fa-instagram"></a>
+
+                </div>
+            </div>
+            <div class="cart">
+                <div class="image">
+                    <img src="./images/Nouveau dossier/pexels-melvin-wahlin-2405649.jpg" alt="">
+                </div>
+
+                <div class="infos">
+                    <h3>snowboard</h3>
+                    <span><i class="fas fa-skiing-nordic"></i></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam natus pariatur.</p>
+                </div>
+                <div class="icons">
+                    <a href="" class="fab fa-facebook-f"></a>
+                    <a href="" class="fab fa-twitter"></a>
+                    <a href="" class="fab fa-instagram"></a>
+                </div>
+            </div>
+            <div class="cart">
+                <div class="image">
+                    <img src="./images/Nouveau dossier/pexels-erik-mclean-4365458.jpg" alt="">
+                </div>
+
+                <div class="infos">
+                    <h3>Walking tour</h3>
+                    <span><i class="fas fa-skiing-nordic"></i></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam natus pariatur.</p>
+                </div>
+                <div class="icons">
+                    <a href="" class="fab fa-facebook-f"></a>
+                    <a href="" class="fab fa-twitter"></a>
+                    <a href="" class="fab fa-instagram"></a>
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- custom js file link  -->
+    <script>
+        const menuntn = document.querySelector('.menu')
+        const navlinks = document.querySelector('.nav_links')
+        menuntn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+        var swiper = new Swiper(".home-slider", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+                slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+                disableOnInteraction: false,
+            }
+        });
+
+
+    </script>
+    </section>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <h3><span class="m">M-</span>Coding<span class="store">Templates</span></h3>
+            <P><span class="m">M-</span>Coding<span class="store">Templates</span> website</P>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/fghf.gfhff"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/MohammedMhamedi"><i class="fab fa-twitter"></i></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCWaK4W8zB_4n1hH0z8Dldig"><i
+                            class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mohammed-m%E2%80%99hamedi-bb9732203/"><i
+                            class="fab fa-linkedin-in"></i></a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021 M-CodingTemplates. designed by <span>M-Coding</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

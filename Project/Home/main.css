@@ -1,0 +1,453 @@
+/*link poppins font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* declare primary color */
+:root {
+    --primary-color: #8b2c2c;
+}
+
+/* make overflow hiden */
+body,
+html {
+    overflow-x: hidden;
+}
+
+/* for background video */
+video {
+    object-fit: cover;
+    border-bottom-left-radius:1rem ;
+    border-bottom-right-radius:1rem ;
+
+}
+
+/* for all page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+
+
+/* nave bare */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+/* for nave links */
+ul {
+    list-style: none;
+}
+li a{
+    color: rgba(0, 0, 0, 0.7);
+
+}
+/* for contener nav links */
+.nav_links {
+    display: flex;
+    align-items: center;
+}
+.nav_links li {
+    margin: 0 30px;
+}
+/* for home  visited */
+.on:visited {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+/* for image menu */
+.menu {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+/* for all links inside page */
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:hover {
+    color: var(--primary-color);
+    font-weight: bold;
+    box-sizing: 2px 2px 5px rgba(0, 0, 0, 0.795);
+}
+/* for header */
+header {
+    top: 60;
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+/* for contoner the header */
+.contener_header {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* h2 contener header */
+.contener_header h2 {
+    font-size: 4vmin;
+    color: whitesmoke;
+}
+/* h1 contener header */
+.contener_header h1 {
+    font-size: 9vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: whitesmoke;
+}
+/* icon on h1 */
+h1 i {
+    color: var(--primary-color);
+}
+
+/* logos */
+.Emontaint_logo_i {
+    width: 150px;
+    height: 4px;
+    color: var(--primary-color);
+    margin: 10px auto;
+    font-size: 4vmin;
+}
+.logo_position{
+    width: 150px;
+    height: 4px;
+    color: var(--primary-color);
+    margin: 30px auto;
+    font-size: 6vmin;
+}
+/* wheater logos */
+.logo1 {
+    width: 150px;
+    height: 4px;
+    color: var(--primary-color);
+    margin: 10px auto;
+    font-size: 6vmin;
+}
+/* center logo header */
+.logo2 {
+    width: 150px;
+    height: 8px;
+    margin: 30px auto;
+    font-size: 6vmin;
+}
+
+/* btns */
+.btn {
+    padding: 8px 15px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: whitesmoke;
+}
+.btn a{
+    color: whitesmoke;
+}
+.btn:hover {
+    background-color: whitesmoke;
+    color: var(--primary-color);
+}
+.btn a:hover{
+    color: var(--primary-color);
+}
+/*resposive*/
+
+@media only screen and (max-width: 950px) {
+    /* harder and nav bar */
+    video {
+        height: 100vh;
+    }
+    .menu {
+        display: block;
+        z-index: 100;
+    }
+    .navbar {
+        padding: 0;
+        z-index: 99;
+    }
+    li a{
+        color: whitesmoke;
+    }
+    .on{
+        color: whitesmoke;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav_links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+        z-index: 99;
+    }
+    .nav_links li {
+        margin: 30px auto;
+    }
+    .nav_links li a i{
+        display: none;
+    }
+    /*-------event--------*/
+    .row {
+        flex-direction: column;
+    }
+    .column img {
+        max-width: 90%;
+    }
+    .row .column {
+        margin: 20px auto;
+    }
+    /* wheater */
+    .wheater .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .wheater .row {
+        grid-auto-rows: minmax(250px, auto);
+        grid-template-areas:
+            ".colomn1"
+            ".colomn2"
+            ".colomn3";
+    }
+    .colomn1 {
+        grid-area: colomn1;
+    }
+    .colomn2 {
+        grid-area: colomn2;
+    }
+    .colomn3 {
+        grid-area: colomn3;
+    }
+    /* position */
+    .position {
+        flex-direction: column;
+        align-items: center;
+    }
+    .p-right {
+        margin-top: 5rem;
+    }
+}
+/* position */
+.position {
+    display: flex;
+    justify-content: space-evenly;
+    background:url(./img/bg2.png);
+    background-position: bottom;
+    background-size: cover;
+    padding: 4rem 0rem;
+}
+.p-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: whitesmoke;
+    width: 500px;
+}
+.p-left P {
+    margin-top: 1rem;
+    text-align: justify;
+    width: 100%;
+}
+.p-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+iframe{
+    border-radius: 10px;
+}
+
+/* for all sections */
+section {
+    width: 100%;
+    margin: 80px auto;
+}
+/* event title */
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: black;
+    justify-content: space-between;
+}
+/* .event row */
+.row {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+/* colomns event  */
+.row .column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+/* contener inside coloms */
+.contener {
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    height:72px;
+    padding: 0.4em 1.5em;
+    font-size: 14px;
+    background: rgba(167, 159, 159, 0.274);
+    backdrop-filter: blur(8px);
+    border-radius: 1rem;
+    overflow: hidden;
+    color: whitesmoke;
+    transform: scale(0.9);
+    transition: all 0.4s;
+}
+.contener:hover {
+    height: 250px;
+}
+
+/* btn contener */
+.contener .btn {
+    float: right;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.eventimg {
+    height: 370PX;
+    box-shadow: 10px 5px 5px black;
+    width: 480px;
+}
+/* h4 contener */
+h4 {
+    font-size: 3vmin;
+    color: black;
+    margin: 20px auto;
+}
+/* all p in page */
+p {
+    width: 80%;
+}
+/* images event */
+.event .ROW .column img {
+    border-radius: 10px;
+}
+
+/* wheater */
+.wheater {
+    padding: 1rem;
+    margin: auto;
+    width: 100vw;
+}
+.wheater .row {
+    display: grid;
+    grid-template-columns: 40% auto 40%;
+    background-repeat: no-repeat;
+    place-content: center;
+}
+.colomn1,
+.colomn3 {
+    text-align: center;
+}
+
+
+/* footer */
+footer {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    background-color: rgb(43, 43, 43);
+}
+.store {
+    color: rgb(202, 181, 181);
+}
+.m {
+    color: rgb(224, 45, 45);
+}
+.footer-content {
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content p {
+    color: whitesmoke;
+}
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials li {
+    margin: 0 10px;
+}
+.socials a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.socials a i {
+    font-size: 1.1rem;
+}
+.socials a:hover i {
+    color: #f91d00;
+}
+.footer-bottom {
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p {
+    width: 100vw;
+    color: whitesmoke;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200;
+}

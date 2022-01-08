@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <link rel="icon" href="./image/kisspng-computer-icons-apple-icon-image-format-desktop-wal-information-about-us-icon-5ab189b23d22a5.8314375415215845622504.png" type="image/icon type">
+
+
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar">
+        <h1 class="logo">
+            <i class="far fa-address-card"></i> About us
+        </h1>
+        <ul class="nav_links">
+            <li><a href="../Home/index.html" class="on"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="../Places/index.html"><i class="fas fa-place-of-worship"></i> Places</a></li>
+            <li><a href="../activites/index.html"><i class="fas fa-hiking"></i> Activities </a></li>
+            <li class="btn"><a href="../log in/index.html">Sign in</a></li>
+        </ul>
+        <img src="./image/Calque 1.png" alt="" class="menu">
+    </nav>
+    <!-- about us  -->
+    <section>
+        <img src="./image/undraw_landscape_mode_re_r964.svg" alt="">
+        <div class="about">
+            <h1>About us</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione animi tenetur asperiores reiciendis porro
+                officiis sequi iure harum possimus. Atque commodi deleniti laudantium blanditiis ipsum. Hic, totam?
+                Obcaecati, dolor laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. A atque accusantium et
+             </p>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="footer-content">
+            <h3><span class="m">M-</span>Coding<span class="store">Templates</span></h3>
+            <P><span class="m">M-</span>Coding<span class="store">Templates</span> website</P>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/fghf.gfhff"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/MohammedMhamedi"><i class="fab fa-twitter"></i></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCWaK4W8zB_4n1hH0z8Dldig"><i
+                            class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mohammed-m%E2%80%99hamedi-bb9732203/"><i
+                            class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021 M-CodingTemplates. designed by <span>M-Coding</span></p>
+        </div>
+    </footer>
+     <!-- menu click with javascript -->
+    <script>
+        const menuntn = document.querySelector('.menu')
+        const navlinks = document.querySelector('.nav_links')
+
+        menuntn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+
+</html>
